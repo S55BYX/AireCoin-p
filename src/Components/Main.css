@@ -1,6 +1,4 @@
 .main {
-  background-color: #26272b;
-  color: #f3f3f3;
   padding: 30px 60px;
   display: flex;
   flex-direction: column;
@@ -54,7 +52,6 @@
 
 .main-stats {
   width: 90%;
-  background-color: #3d3d3d;
   border-radius: 10px;
   margin-bottom: 10rem;
   margin-top: 3rem;
@@ -65,6 +62,15 @@
   justify-content: space-around;
   padding: 2rem;
 }
+
+#light .main-stats{
+  background-color: #cecece
+}
+
+#dark .main-stats{
+  background-color: #3d3d3d;
+}
+
 
 @media only screen and (max-width: 680px) {
   .main-heading-right > img {

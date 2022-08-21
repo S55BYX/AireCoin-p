@@ -15,6 +15,14 @@
   margin-right: auto;
 }
 
+#light .cards{
+  background-color: #cecece
+}
+
+#dark .cards{
+  background-color: #3d3d3d;
+}
+
 .card-font{
   font-size: 0.9em;
 }

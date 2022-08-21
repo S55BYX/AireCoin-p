@@ -1,6 +1,16 @@
 * {
   list-style: none;
 }
+
+#dark .main-doc{
+  background-color: #282c34;
+  color: whitesmoke;
+}
+
+#light .main-doc{
+  background-color: whitesmoke;
+  color: #282c34;
+}
 .main-doc {
   width: 100%;
   display: flex;
@@ -9,8 +19,6 @@
   align-items: center;
 }
 .docs-container {
-  background-color: #26272b;
-  color: #f3f3f3;
   padding: 15px 60px;
   display: flex;
   flex-direction: row;

@@ -5,12 +5,23 @@ import Nav from "./Components/Nav";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Nft from "./Components/routes/Nft";
 import Docs from "./Components/routes/Docs";
+import { createContext, useState } from "react"
+
+
+export const ThemeContext = createContext("null")
 
 function App() {
+
+  const [theme, setTheme] = useState("dark")
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"))
+  }
   return (
-    <div className="App">
+      <ThemeContext.Provider value ={{theme, toggleTheme}} >
+    <div className="App" id={theme}>
       <BrowserRouter>
-        <Nav/>
+        <Nav toggleTheme={toggleTheme} theme={theme}/>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="NFT" element={<Nft />} />
@@ -19,6 +30,7 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
+      </ThemeContext.Provider>
   );
 }
 

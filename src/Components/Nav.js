@@ -7,10 +7,9 @@ import {
 import { Link } from "react-router-dom";
 import "./Nav.css";
 
-import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-function Nav() {
+function Nav(props) {
   return (
     <div className="nav-main">
       <div className="nav-top">
@@ -32,7 +31,7 @@ function Nav() {
               <Link to="/News">News</Link>
             </li>
           </ul>
-          <button className="nav-cta">Connect Wallet</button>
+          <button onClick={props.toggleTheme} className="nav-cta">{props.theme === "dark" ? "Light": "Dark"} Mode</button>
           <button className="nav-btn nav--close-btn">
             <RiCloseLine />
           </button>

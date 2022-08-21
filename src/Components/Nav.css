@@ -7,8 +7,6 @@
   width: 100%;
 }
 .nav-top {
-  background-color: #26272b;
-  color: #f3f3f3;
   display: flex;
   flex-direction: row;
   padding: 15px 60px;
@@ -47,9 +45,17 @@ button {
   border-radius: 8px;
   border-style: solid;
   border-color: #f3f3f3;
-  color: #f3f3f3;
   padding: 10px;
   cursor: pointer;
+  color: #f3f3f3;
+}
+
+#dark button{
+  color: #eeeeee
+}
+
+#light button{
+  color: #111111;
 }
 
 button:hover {
@@ -75,12 +81,13 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
+
 .nav-right {
   display: flex;
   flex-direction: row;
   padding: 0px 0px 5px 120px;
   justify-content: space-between;
-  max-height: 70px;
+  
   align-items: center;
 }
 

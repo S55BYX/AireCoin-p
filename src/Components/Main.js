@@ -4,6 +4,13 @@ import Cards from "./Cards";
 import "./Main.css";
 
 function Main() {
+  const mainStats = [
+    { figure: "12M", desc: "Transactions" },
+    { figure: "2.8M", desc: "Staked" },
+    { figure: "72K", desc: "Contracts" },
+    { figure: "745%", desc: "Price Increase" },
+  ];
+
   return (
     <div data-testid="main-page" className="main">
       <div className="main-heading">
@@ -26,22 +33,12 @@ function Main() {
       </div>
 
       <div data-testid="stats" className="main-stats">
-        <div>
-          <h2>12M</h2>
-          <p>Transactions</p>
-        </div>
-        <div>
-          <h2>2.8M</h2>
-          <p>Staked</p>
-        </div>
-        <div>
-          <h2>72k+</h2>
-          <p>Contracts</p>
-        </div>
-        <div>
-          <h2>745%</h2>
-          <p>Price Increase</p>
-        </div>
+        {mainStats.map((stats) => (
+          <div className="stat">
+            <h2>{stats.figure}</h2>
+            <p>{stats.desc}</p>
+          </div>
+        ))}
       </div>
 
       <h2>Learn how to use AireCoin</h2>

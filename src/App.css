@@ -5,8 +5,17 @@
   font-weight: 600;
 }
 
+#dark{
+  background-color: #282c34;
+  color: whitesmoke;
+}
+
+#light{
+  background-color: whitesmoke;
+  color: #282c34;
+}
+
 .App {
-  background-color: #26272b;
 
   text-align: center;
 }
@@ -23,7 +32,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
