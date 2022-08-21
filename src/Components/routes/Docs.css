@@ -1,0 +1,84 @@
+* {
+  list-style: none;
+}
+.main-doc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.docs-container {
+  background-color: #26272b;
+  color: #f3f3f3;
+  padding: 15px 60px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  width: 90%;
+}
+
+.docs-menu {
+  column-width: 25%;
+  text-align: left;
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.docs-main {
+  width: 75%;
+  text-align: left;
+}
+
+.docs-main > p {
+  margin-top: 30px;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 42em;
+}
+
+.docs-main > h2 {
+  margin-top: 30px;
+  line-height: 1.7;
+  max-width: 42em;
+}
+
+.docs-main > h2 {
+  margin-top: 30px;
+  line-height: 1.7;
+  max-width: 42em;
+}
+
+.docs-main > h2::before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #7b3fe4;
+  padding-top: 44px;
+  margin-bottom: 40px;
+}
+
+.new {
+  background-color: #7b3fe4;
+  border-radius: 0.5rem;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+@media (max-width: 800px) {
+  .docs-container {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .docs-container {
+    padding: 15px 30px;
+  }
+}
