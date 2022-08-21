@@ -32,7 +32,7 @@ function Nav() {
               <Link to="/News">News</Link>
             </li>
           </ul>
-          <button className="nav-cta"> Wallet</button>
+          <button className="nav-cta">Connect Wallet</button>
           <button className="nav-btn nav--close-btn">
             <RiCloseLine />
           </button>
