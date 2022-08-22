@@ -17,8 +17,8 @@ function App() {
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"))
   }
-  return (
-      <ThemeContext.Provider value ={{theme, toggleTheme}} >
+  return ( 
+      <ThemeContext.Provider value ={{theme, toggleTheme}} > {/* ThemeContext is allowing the toggle between the themes*/}
     <div className="App" id={theme}>
       <BrowserRouter>
         <Nav toggleTheme={toggleTheme} theme={theme}/>

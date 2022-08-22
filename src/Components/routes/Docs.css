@@ -2,6 +2,7 @@
   list-style: none;
 }
 
+/* the two options below are for the toggle between themes */
 #dark .main-doc{
   background-color: #282c34;
   color: whitesmoke;
@@ -64,7 +65,7 @@ li {
   line-height: 1.7;
   max-width: 42em;
 }
-
+/* This css rule adds a line break before the headings */
 .docs-main > h2::before {
   content: " ";
   display: block;
@@ -73,7 +74,8 @@ li {
   margin-bottom: 40px;
 }
 
-.new {
+/* Styling for the scroll menu */
+.scroller {
   background-color: #7b3fe4;
   border-radius: 0.5rem;
   padding-right: 10px;

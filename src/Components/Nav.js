@@ -44,6 +44,8 @@ function Nav(props) {
   );
 }
 
+// The below is a nav used for the responsive design
+
 function MobileNav() {
   const [show, setShow] = useState(false);
 

@@ -9,6 +9,7 @@ function Docs() {
       <div className="docs-container">
         <div className="docs-main">
           <>
+          {/* The below can be cleaned up by placing in a different file and mapping over  */}
             <h1>Docs</h1>
             <p>
               This page is an overview of the AireCoin documentation and related
@@ -114,7 +115,7 @@ function Docs() {
         <div className="docs-menu">
           <ul>
             <Scrollspy
-              currentClassName={"new"}
+              currentClassName={"scroller"}
               items={["quick-start", "nodes", "wallets", "bridges"]}
             >
               <li>

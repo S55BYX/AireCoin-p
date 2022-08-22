@@ -5,6 +5,8 @@
   font-weight: 600;
 }
 
+/* The 2 styles below control majority of the theme  */
+
 #dark{
   background-color: #282c34;
   color: whitesmoke;

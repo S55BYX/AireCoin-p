@@ -13,7 +13,7 @@ test("Main app renders", async () => {
   expect(items).toHaveLength(1);
 });
 
-test("Cards are renders", async () => {
+test("Cards are rendered", async () => {
   render(
     <Router>
       <Main />
@@ -22,7 +22,7 @@ test("Cards are renders", async () => {
   const items = await screen.findAllByTestId("cards");
   expect(items).toHaveLength(1);
 });
-test("Stats are renders", async () => {
+test("Stats are rendered", async () => {
   render(
     <Router>
       <Main />
