@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AireCoin-p/static/css/main.0dc7de41.css",
+    "main.js": "/AireCoin-p/static/js/main.387e39ed.js",
+    "static/js/787.f7c4e510.chunk.js": "/AireCoin-p/static/js/787.f7c4e510.chunk.js",
+    "index.html": "/AireCoin-p/index.html",
+    "main.0dc7de41.css.map": "/AireCoin-p/static/css/main.0dc7de41.css.map",
+    "main.387e39ed.js.map": "/AireCoin-p/static/js/main.387e39ed.js.map",
+    "787.f7c4e510.chunk.js.map": "/AireCoin-p/static/js/787.f7c4e510.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dc7de41.css",
+    "static/js/main.387e39ed.js"
+  ]
+}
